@@ -6,5 +6,5 @@
 + Display posts 
 - Adding a new post
 * Display the number of registered users
-* 
-**  In the following, we will explain each of these facilities:**
+
+**In the following, we will explain each of these facilities:**

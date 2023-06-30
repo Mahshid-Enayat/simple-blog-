@@ -1,0 +1,53 @@
+{% extends 'base.html' %}                     <!--this page is for post page when the user uses login button-->
+
+{% block content %}
+  
+  
+  <body>
+    
+      <nav class="navbar navbar-expand-md navbar-light bg-light" style="width: 100%;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+           <li class="nav-item">
+                <a class="nav-link" href="{{url_for('create')}}">New Post</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <h1>{% block title %} Welcome {{session["name"]}} {% endblock %}</h1>
+    <p id="num_users">Loading...</p>
+    <script>
+        // Get a reference to the HTML element where the number of users will be displayed
+        const usersElement = document.querySelector('#num_users');
+        // Make a GET request to the Flask route that returns the number of users
+        fetch('/numuser')
+          .then(response => response.json())
+          .then(data => {
+            // Update the UI to display the number of users
+            const num_users = data.num_users;
+            usersElement.textContent = `There are ${num_users} users Registered!`;
+          })
+          .catch(error => {
+            console.error('Error fetching number of users:', error);
+          });
+      </script>
+  </body>
+  
+
+    
+  {% for post in posts %}
+  <a href="{{ url_for('post', post_id=post['id']) }}">
+      <h2>{{ post['title'] }}</h2>
+  </a>
+  <a href="{{ url_for('edit', id=post['id']) }}">
+      <span class="badge badge-warning">Edit</span>
+  </a>
+  
+  {% endfor %}
+  
+  <a href="{{url_for('logout')}}" class="btn btn-primary btn-block">Logout</a>
+  {% endblock %}
+ 

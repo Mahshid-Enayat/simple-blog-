@@ -44,7 +44,7 @@ On this page, the logged in user can publish a post by choosing a name and writi
 ![Screenshot](createpost.png)
 
 
-#### User also can edit or delete a post:
+#### User can also edit or delete a post:
 
 
 ![Screenshot](editpost.png)

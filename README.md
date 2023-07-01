@@ -24,13 +24,30 @@ stored in the database, successful login and the user will be directed to the ma
 On the main page of the blog, you can see the posts that all users have registered. By clicking on each post, you can see the message in that post and the date and time when this post was published.
 On this page, you can also see the number of users who have registered on the site, which is taken from the server by JavaScript and using FetchAPI.
 
-Attention:
+**Attention:**
 If the user is logged in the posts page will be shown like that:
+
+
 ![Screenshot](seepostlogin.png)
+
+
 If the user is **not** logged in the posts page will be shown like that:
+
+
 ![Screenshot](seepost.png)
 
 
+#### Part:Adding a new post
+On this page, the logged in user can publish a post by choosing a name and writing the desired text. If the user is not logged into his account, this feature is not active for him!
+
+
+![Screenshot](createpost.png)
+
+
+User also can edit or delete a post:
+
+
+![Screenshot](editpost.png)
 
 
 

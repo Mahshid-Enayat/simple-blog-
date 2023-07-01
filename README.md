@@ -25,26 +25,26 @@ On the main page of the blog, you can see the posts that all users have register
 On this page, you can also see the number of users who have registered on the site, which is taken from the server by JavaScript and using FetchAPI.
 
 **Attention:**
-If the user is logged in the posts page will be shown like that:
+If the user is logged in the posts page will be shown like this:
 
 
 ![Screenshot](seepostlogin.png)
 
 
-If the user is **not** logged in the posts page will be shown like that:
+If the user is **not** logged in the posts page will be shown like this:
 
 
 ![Screenshot](seepost.png)
 
 
-#### Part:Adding a new post
+#### Part 4 :Adding a new post
 On this page, the logged in user can publish a post by choosing a name and writing the desired text. If the user is not logged into his account, this feature is not active for him!
 
 
 ![Screenshot](createpost.png)
 
 
-User also can edit or delete a post:
+#### User also can edit or delete a post:
 
 
 ![Screenshot](editpost.png)

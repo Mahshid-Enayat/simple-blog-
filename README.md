@@ -14,4 +14,24 @@ In this section, the user enters his username, e-mail address and password, and 
 ![Screenshot](Register.png)
 
 
+#### Part 2: entry and exit
+In this section, the user will enter the blog by entering his username and password. If the username and password of the user
+stored in the database, successful login and the user will be directed to the main page, and in case of unsuccessful login, it will stay on the same page
+
+![Screenshot](login.png)
+
+#### Part 3: The main page
+On the main page of the blog, you can see the posts that all users have registered. By clicking on each post, you can see the message in that post and the date and time when this post was published.
+On this page, you can also see the number of users who have registered on the site, which is taken from the server by JavaScript and using FetchAPI.
+
+Attention:
+If the user is logged in the posts page will be shown like that:
+![Screenshot](seepostlogin.png)
+If the user is **not** logged in the posts page will be shown like that:
+![Screenshot](seepost.png)
+
+
+
+
+
 

@@ -1,6 +1,6 @@
 # simple-blog
 
-### In this project, we designed a simple blog using HTML, CSS, JavaScript, Flask. This blog has the following features:
+### In this project, we designed a simple blog using HTML, CSS, JavaScript, Flask and Python. This blog has the following features:
 - Registration
 * entry and exit
 + Display posts 
